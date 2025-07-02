@@ -1,0 +1,191 @@
+.skills-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  
+}
+.skill-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.project-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.page-content {
+  margin-top: 80px;
+}
+
+.card-wrapper {
+  background-color: #f5f5f5; /* Light gray outer area */
+  border-radius: 12px;
+  height: 100%;
+}
+
+.skills-cube {
+  width: 360px;
+  height: 360px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+  margin: 0 auto;
+  perspective: 1000px; /* Needed for 3D flip */
+}
+
+/* Flip card container */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back faces */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  user-select: none;
+}
+
+.flip-card-front {
+  background-color: #fff;
+}
+
+.flip-card-front img.skill-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.flip-card-back {
+  background-color: #1e90ff;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 10px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;  /* allows vertical scrolling */
+}
+
+.page-content {
+  margin-top: 80px;     /* height of your fixed header */
+  margin-bottom: 80px;  /* height of your fixed footer (if any) */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/* Contact Page*/
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh; /* vertical centering */
+  text-align: center;
+}
+
+.contact-box {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-heading {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-email {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #007bff;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-email:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
+/* Projects */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.project-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* .project-image {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+} */
+.project-image {
+  width: 100%;
+  height: 200px; /* or auto if images are very different sizes */
+  object-fit: contain;
+  padding: 10px;
+  background-color: #ffffff; /* Optional: ensures a clean background */
+  border-bottom: 1px solid #dee2e6; /* subtle separation from text */
+  box-sizing: border-box;
+}
+
