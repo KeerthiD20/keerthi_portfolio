@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { personalDetails } from "../Details";
 
 function Home() {
-  const { name, tagline, img } = personalDetails;
+  const { name, tagline, image } = personalDetails;
   const [visibleWords, setVisibleWords] = useState([]);
   const indexRef = useRef(0);
 
@@ -27,16 +27,16 @@ function Home() {
 
  return (
     <div className="container page-content">
-      <div className="row align-items-center">
-        {/* Text Column */}
+      <div className="row align-items-center flex-column-reverse flex-md-row">
+        
         <div className="col-md-6">
           <h2>Hi, 👋<br />My name is {name}</h2>
           <h2>I am a <span className="text-primary">{visibleWords.join('')}</span></h2>
         </div>
 
-        {/* Image Column */}
+        
         <div className="col-md-6 text-center">
-          <img src={img} alt="profile" className="img-fluid rounded" style={{ maxWidth: "80%" }} />
+          <img src={image} alt="profile" className="img-fluid rounded" style={{  maxWidth: "80%" }} />
         </div>
       </div>
     </div>

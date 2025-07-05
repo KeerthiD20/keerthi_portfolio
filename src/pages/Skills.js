@@ -1,15 +1,15 @@
 import './Pages.css';
-const skills  = [
-    {name: 'HTML', src: require('../assets/techstack/html.png')},
-    {name: 'CSS', src: require('../assets/techstack/css.png')},
-    {name: 'Bootstrap', src:require('../assets/techstack/bootstrap.png')},
-    {name: 'Javascript', src:require('../assets/techstack/js.png')},
-    {name: 'jQuery', src:require('../assets/techstack/jquery.png')},
-    {name: 'React', src:require('../assets/techstack/react.png')},
-    {name: 'Redux', src:require('../assets/techstack/redux.png')},
-    {name: 'Php', src:require('../assets/techstack/php.png')},
-    {name: 'Sql', src:require('../assets/techstack/sql.png')},
-]
+const skills = [
+  { name: 'HTML', src: process.env.PUBLIC_URL + '/html.png' },
+  { name: 'CSS', src: process.env.PUBLIC_URL + '/css.png' },
+  { name: 'Bootstrap', src: process.env.PUBLIC_URL + '/bootstrap.png' },
+  { name: 'Javascript', src: process.env.PUBLIC_URL + '/js.png' },
+  { name: 'jQuery', src: process.env.PUBLIC_URL + '/jquery.png' },
+  { name: 'React', src: process.env.PUBLIC_URL + '/react.png' },
+  { name: 'Redux', src: process.env.PUBLIC_URL + '/redux.png' },
+  { name: 'Php', src: process.env.PUBLIC_URL + '/php.png' },
+  { name: 'Sql', src: process.env.PUBLIC_URL + '/sql.png' },
+];
 
 // const tools = [
 //     {name: 'vs code', src:require('../assets/tools/vscode.png')},

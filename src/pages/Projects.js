@@ -1,7 +1,7 @@
 import React from 'react';
 import { projectDetails } from '../Details';
 import ProjectDetails from '../components/ProjectDetails';
-import '../pages/Pages.css'; // We'll define custom styles here
+import '../pages/Pages.css';
 
 function Projects() {
   return (

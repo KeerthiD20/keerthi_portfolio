@@ -1,0 +1,41 @@
+/* === Global Box Sizing Reset === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Layout Wrapper === */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === Main Scrollable Content Area === */
+.app-content {
+  flex: 1;
+  padding-bottom: 80px; /* Space to avoid footer overlap */
+  overflow-y: auto;
+}
+
+/* === Fixed Footer === */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 1000;
+}

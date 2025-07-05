@@ -13,14 +13,12 @@ function Work({ position, company, location, type, duration }) {
         <div className="d-flex flex-column flex-md-row gap-3">
           <div className="d-flex align-items-center">
             <svg width="16" height="12" fill="currentColor" className="me-1">
-              {/* Replace with your actual company SVG path */}
               <path d="M3.33331 1.5V10.5H7.33331V8.75H8.66665V10.5H12.6666V1.5H3.33331Z..." />
             </svg>
             <span className="text-muted small">{company}</span>
           </div>
           <div className="d-flex align-items-center">
             <svg width="16" height="12" fill="currentColor" className="me-1">
-              {/* Replace with your actual location SVG path */}
               <path d="M8 6.75C7.50555 6.75 7.0222 6.64003..." />
               <path d="M8.00001 11.25L3.78201 7.51912..." />
             </svg>
